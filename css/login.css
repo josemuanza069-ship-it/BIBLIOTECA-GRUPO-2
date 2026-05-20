@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("../img/pexels-cottonbro-4855370.jpg");
+    justify-content: center;
+    display: flex;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.login-container{
+    background-color: white;
+    box-shadow: 3px 3px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 450px;
+    height: 65vh;
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 100px;
+}
+.login-itens{
+    margin-top: 50px;
+}
+label{
+    display: block;
+    margin-top: 20px;
+}
+input{
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.btn-input{
+    width: 100%;
+    max-width: 200px;
+    background-color: rgb(32, 75, 100);
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.btn-input:hover{
+    background-color: rgb(36, 94, 128);
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.link{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-top: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro </title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="cadastro-container">
+        <form class="cadastro"> 
+            <h2> Cadastro </h2>
+            <p> Coloque as suas credenciais para cadastrar-se ao sistema </p>
+
+            <div class="cadastro-itens">
+                <label for="name"> Nome </label>
+                <input type="text" placeholder="Insira o seu nome" required>
+            </div>
+
+            <div class="cadastro-itens">
+                <label for="email"> Email </label>
+                <input type="email" name="email" id="email" placeholder="Insira o seu email" required>
+            </div>
+
+            <div class="cadastro-itens">
+                <label for="number"> Telefone </label>
+                <input type="number" name="tel" id="tel" placeholder="Insira o seu número de telefone">
+            </div>
+
+            <div class="cadastro-itens">
+                <label for="password"> Senha </label>
+                <input type="password" name="senha" id="senha" placeholder="Crie a sua palavra passe" required>
+            </div>
+
+            <div class="cadastro-itens">
+                <label for="password"> Confirme a sua Senha </label>
+                <input type="password" name="senha" id="senha" placeholder="A palavra passe deve ser igual">
+            </div>
+
+            <div class="btn">
+                <button type="submit" class="btn-cadastro"> Cadastrar </button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

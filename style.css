@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:Bebas;
+    src: url('fontes/bebas_neue/BebasNeue-Regular.otf') format('opentype'), url('fontes/bebas_neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:Coolvetica;
+    src: url('fontes/coolvetica/Coolvetica\ Rg.otf') format('opentype');
+}
+@font-face {
+    font-family:Les Flos;
+    src: url('fontes/les_flos/Les\ Flos\ Sans.otf') format('opentype');
+}
+@font-face {
+    font-family: Drop;
+    src: url('fontes/drop_shade/DropShade-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: White-Storm;
+    src: url('fontes/white_storm/White\ Storm.otf') format('opentype');
+}
+@font-face {
+    font-family: Roboto;
+    src: url('fontes/roboto/Roboto-Bold.ttf') format('truetype');
+}
+:root{
+    --cor1: #A7754D;
+    --cor2: #7DDE92;
+    --cor3: #2D93AD;
+    --font1: "Bebas";
+    --font2: "Coolvetica";
+    --font3: "Les Flos";
+    --font4: "Drop";
+    --font5: "White-Storm";
+    --font6: "Roboto";
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-color: var(--cor3);
+    padding: 12px;
+    flex-direction: column;
+     position: sticky;
+}
+.logo {
+    font-family: var(--font3);
+    font-size: 18px;
+    color: white;
+}
+.navbar{
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+.links{
+    margin-right: 18px;
+}
+.links a {
+    padding: 4px;
+    font-family: var(--font3);
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover{
+    background: white;
+    border-radius: 8px;
+    transition: 0.5s;
+    color: var(--cor3);
+    padding: 4px;
+}
+main{
+    flex: 1;
+}
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: var(--cor3);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+.banner:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+.banner-texto{
+    flex: 1;
+    padding: 2rem;
+    min-width: 250px;
+}
+.banner-texto h1 {
+    font-family: var(--font6);
+    color: rgba(255, 255, 255, 0.925);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.banner-texto p {
+    font-family: var(--font3);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.671);
+}
+.banner-imagem{
+    flex: 1;
+    min-width: 250px;
+}
+.banner-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.sobre-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.sobre-container h1 {
+    font-family: var(--font6);
+    color: var(--cor3);
+    margin-bottom: 2rem;
+}
+
+.sobre-container h1 i {
+    margin-left: 0.5rem;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    flex: 1 1 280px;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+.card-topo {
+    background-color: var(--cor3);
+    padding: 1.5rem;
+    text-align: center;
+}
+.card-topo h1 {
+    font-family: var(--font6);
+    font-size: 25px;
+    color: white;
+    margin: 0;
+}
+.card-corpo {
+    padding: 1.5rem;
+    text-align: center;
+}
+.card-corpo p {
+    font-family: var(--font2);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+}
+
+.contactos-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.contactos-container > h1 {
+    font-family: var(--font2);
+    color: var(--cor3);
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.contactos-container .cards {
+    flex: 1 1 220px;
+    max-width: 280px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contactos-container .cards:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+.contactos-container .card-topo {
+    background-color: var(--cor3);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: white;
+}
+.contactos-container .card-topo i {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--coricone);
+}
+.contactos-container .card-topo h1 {
+    font-family: var(--font6);
+    font-size: 1.4rem;
+    margin: 0;
+    color: white;
+}
+.contactos-container .card-corpo {
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.contactos-container .card-corpo p {
+    font-family: var(--font2);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
+    word-break: break-word;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.footer-container{
+    box-sizing: border-box;
+    background-color: var(--cor3);
+    padding: 30px;
+    width: 100%;
+
+}
+
+.desenvolvedores{
+    text-align: left;
+}
+
+.desenvolvedores > span{
+    font-family: var(--font1);
+    color: white;
+}
+.desenvolvedores > p{
+    font-family: var(--font2);
+    color: rgba(255, 255, 255, 0.719);
+}
+.localizacao{
+    text-align: center;
+}
+.localizacao > p{
+    font-family: var(--font1);
+    color: rgba(255, 255, 255, 0.938);
+}
+.redes-sociais{
+    display: block;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+}
+.redes-sociais a{
+    font-family: var(--font2);
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    display: inline-block;
+}
+.redes-sociais p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.txt-principal{
+    visibility: hidden;
+}
+.txt-second{
+    visibility: hidden;
+}
+.img-banner{
+    visibility: hidden;
+}
+.item-banner{
+    visibility: hidden;
+}
